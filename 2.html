@@ -1,3 +1,49 @@
+  var g=0;
+var fruits = ["Яблоко", "Апельсин", "Слива", "банан", "груша"];
+var e=4;
+var taras;
+for (;e>=0;){
+l='i'+e;
+fruits[e]= document.getElementById(l).value;
+e--;}
+e=4;
+document.getElementById('p0').innerHTML =""
+
+for (;e>=0;){
+ 
+  if (fruits[e] <= 0){ 
+    g=g+Number(fruits[e]);}
+
+e--;}
+ document.getElementById('p0').innerHTML = document.getElementById('p0').innerHTML +" "+g; 
+
+}
+  
+</script>
+
+<br>
+<br>
+
+
+<br>
+<input value="" id="i0" type="text">
+<br> 
+<input value="" id="i1" type="text">
+<br>
+<input value="" id="i2" type="text">
+<br>
+<input value="" id="i3" type="text">
+<br>
+<input value="" id="i4" type="text">
+
+
+<br>
+<br>
+<a href="#on" class="button15" onclick="er5()" >Array</a>
+<a href="#on" class="button15" onclick="er6()" >Array2</a>
+<br>
+
+2017-01-16 9:45 GMT+03:00 BlackStar people <svetarofieva@gmail.com>:
  <style>
 p0 {font-size: 4em; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; color: #ddcca3;}
 p1 {font-size: 4em; text-shadow: 4px 2px black; color: #ece2ca;}
