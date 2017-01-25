@@ -1,49 +1,4 @@
-<html>
-<head>
-
-  <link rel="stylesheet" href="style.css">
-
-  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-  <title>css</title>
-
-
-</head>
-
-
-<body>
-
-<p>
-</p>
-<div id="Navigation">
-<ul style="left: 8px; width: 649px;" class="Navigation">
-
-  <li><a href="index.html">Home</a></li>
-
-  <li><a href="css.html">CSS</a></li>
-
-  <li><a href="Javascript.html">Java script</a>
-    <ul>
-
-      <li><a href="1.html">&#1047;&#1072;&#1076;&#1072;&#1095;&#1072; 1</a></li>
-
-      <li><a href="2.html">&#1047;&#1072;&#1076;&#1072;&#1095;&#1072; 2</a></li>
-
-      <li><a href="3.html">&#1047;&#1072;&#1076;&#1072;&#1095;&#1072; 3</a></li>
-
-    </ul>
-
-  </li>
-
-  <li><a href="HTML.html">HTML</a></li>
-
-</ul>
-
-</div>
-
-<br>
-
- 
-<style>
+ <style>
 p0 {font-size: 4em; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; color: #ddcca3;}
 p1 {font-size: 4em; text-shadow: 4px 2px black; color: #ece2ca;}
 p2 {font-size: 4em; text-shadow: 0 2px 2px rgba(0, 0, 30, 0.6); color: rgba(102, 0, 102, 0.5);}
@@ -116,6 +71,53 @@ e--;}
 }
   
 </script>
+<script>
+  function er7() {
+  var g=0;
+  var w=0;
+var fruits = ["Яблоко", "Апельсин", "Слива", "банан", "груша"];
+var e=4;
+var taras;
+for (;e>=0;){
+l='i'+e;
+fruits[e]= document.getElementById(l).value;
+e--;}
+e=4;
+document.getElementById('p0').innerHTML =""
+
+for (;e>=0;){
+ 
+  if (fruits[e] % 2 == 1){ 
+    w++;}
+
+e--;}
+ document.getElementById('p0').innerHTML = document.getElementById('p0').innerHTML +" "+w; 
+}
+</script>
+<script>
+  function er8 (){
+  var g=0;
+  var w=0;
+var fruits = ["Яблоко", "Апельсин", "Слива", "банан", "груша"];
+var e=4;
+var taras;
+for (;e>=0;){
+l='i'+e;
+fruits[e]= document.getElementById(l).value;
+e--;}
+e=4;
+document.getElementById('p0').innerHTML =""
+
+for (;e>=0;){
+ 
+  if (fruits[e] >0){
+    g=g+Number(fruits[e]);
+    w++;}
+
+e--;}
+ document.getElementById('p0').innerHTML = document.getElementById('p0').innerHTML +" "+g/w; 
+}
+</script>
 
 <br>
 <br>
@@ -137,7 +139,6 @@ e--;}
 <br>
 <a href="#on" class="button15" onclick="er5()" >Array</a>
 <a href="#on" class="button15" onclick="er6()" >Array2</a>
+<a href="#on" class="button15" onclick="er7()" >Array3</a>
+<a href="#on" class="button15" onclick="er8()" >Array4</a>
 <br>
-
-</body>
-</html>
