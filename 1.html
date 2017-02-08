@@ -1,4 +1,4 @@
-<style>
+<<style>
 p0 {font-size: 4em; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; color: #ddcca3;}
 </style>
 <p0 id="p0">Муки ИРЫ</p0>
@@ -6,9 +6,13 @@ p0 {font-size: 4em; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px 
 
 <script>
 function er1() {
-var e = 9;  
-
-var A=[4,8,5,7,8,3,8,9,6,5];
+     document.getElementById('p0').innerHTML =" "; 
+var e =9;  
+var A=[];
+for (;e>=0;){
+l='i'+e;
+A[e]= document.getElementById(l).value;
+e--;}
     for (var i = 0; i < 9; i++)
      { for (var j = 0; j < 9-i; j++)
         { if (A[j+1] < A[j])
@@ -17,14 +21,13 @@ var A=[4,8,5,7,8,3,8,9,6,5];
      }                     
    document.getElementById('p0').innerHTML = document.getElementById('p0').innerHTML +" "+A[0]; 
 }
- if (fruits[A] >0){l='i'+A;
-fruits[A]= document.getElementById(l).value;
-A--;}
+ 
+
 </script>
 
 
 
-<a href="#on" class="button15" onclick="er1()" >задача 1</a>
+
 <br>
 <input value="" id="i0" type="text">
 <br> 
@@ -45,6 +48,9 @@ A--;}
 <input value="" id="i8" type="text">
 <br>
 <input value="" id="i9" type="text">
+<br>
+<br>
+<a href="#on" class="button15" onclick="er1()" >задача 1</a>
 <style>
 p0 {font-size: 4em; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; color: #ddcca3;}
 p1 {font-size: 4em; text-shadow: 4px 2px black; color: #ece2ca;}
