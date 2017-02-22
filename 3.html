@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
 <html>
 <head>
 
@@ -73,25 +73,13 @@ a.button15:active {
 </style>
 
   <br> <p0 id="p0">911</p0> 
- <script>
-function er5() {
-var fruits = ["Яблоко", "Апельсин", "Слива", "банан", "груша"];
-var e=4;
-for (;e>=0;){
-l='i'+e;
-fruits[e]= document.getElementById(l).value;
-e--;}
-e=4;
-document.getElementById('p0').innerHTML =""
-for (;e>=0;){
-document.getElementById('p0').innerHTML = document.getElementById('p0').innerHTML +" "+( fruits[e] ); 
-e--;}}
-   
-</script>
+
+
 
  <script>
-function er6() {
+  function er6 (){
   var g=0;
+  var w=0;
 var fruits = ["Яблоко", "Апельсин", "Слива", "банан", "груша"];
 var e=9;
 var taras;
@@ -101,15 +89,24 @@ fruits[e]= document.getElementById(l).value;
 e--;}
 e=9;
 document.getElementById('p0').innerHTML =""
+var theElement = document.getElementById("p0");
 for (;e>=0;){
  
-  if (fruits[e] <= 0){ 
-    g=g+Number(fruits[e]);}
-e--;}
- document.getElementById('p0').innerHTML = document.getElementById('p0').innerHTML +" "+g; 
+  m=Number(fruits[e]);
+  while ( m>0){
+    g=g+m%10;
+    m= (m-m%10)/ 10;
+    g=g*10;
 }
-  
+
+theElement.innerHTML = theElement.innerHTML  +parseInt(g/10)+"<p></p>"; 
+g=0;
+
+e--;}
+}
 </script>
+  
+
 <a href="#on" class="button15" onclick="er6()" >Array</a>
 
 <br>
@@ -132,3 +129,7 @@ e--;}
 <input value="" id="i8" type="text">
 <br>
 <input value="" id="i9" type="text">
+
+</body>
+</html>
+
