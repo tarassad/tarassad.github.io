@@ -43,6 +43,8 @@
 p0 {font-size: 4em; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; color: #ddcca3;}
 p1 {font-size: 4em; text-shadow: 4px 2px black; color: #ece2ca;}
 p2 {font-size: 4em; text-shadow: 0 2px 2px rgba(0, 0, 30, 0.6); color: rgba(102, 0, 102, 0.5);}
+p4 {font-size: 4em; text-shadow: 0 2px 2px rgba(0, 0, 30, 0.6); color: rgba(102, 0, 102, 0.5);}
+
 a.button15 {
   display: inline-block;
   font-family: arial,sans-serif;
@@ -72,63 +74,117 @@ a.button15:active {
 }
 </style>
 
-  <br> <p0 id="p0">911</p0> 
+<p0 id="p0">Муки ИРЫ</p0>
+<script>
+ function e2 (){
+       document.getElementById('p0').innerHTML =""
+         var sum = 0;
+  var n;
+   n = document.getElementById('i0').value;
+     for (var i = 1; i <= n; i++) {
+       sum =sum+ i;
+  }
+  document.getElementById('p0').innerHTML =sum
+ }
 
 
-
- <script>
-  function er6 (){
-  var g=0;
-  var w=0;
-var fruits = ["Яблоко", "Апельсин", "Слива", "банан", "груша"];
-var e=9;
-var taras;
-for (;e>=0;){
-l='i'+e;
-fruits[e]= document.getElementById(l).value;
-e--;}
-e=9;
-document.getElementById('p0').innerHTML =""
-var theElement = document.getElementById("p0");
-for (;e>=0;){
- 
-  m=Number(fruits[e]);
-  while ( m>0){
-    g=g+m%10;
-    m= (m-m%10)/ 10;
-    g=g*10;
-}
-
-theElement.innerHTML = theElement.innerHTML  +parseInt(g/10)+"<p></p>"; 
-g=0;
-
-e--;}
-}
 </script>
-  
 
-<a href="#on" class="button15" onclick="er6()" >Array</a>
+<br>
+<br>
+
 
 <br>
 <input value="" id="i0" type="text">
-<br> 
+<br>
+<br>
+<a href="#on" class="button15" onclick="e2()" >Array</a>
+<br>
+
+
+<p0 id="p1">Муки ИРЫ</p0>
+<script>
+ function e3 (){
+ document.getElementById('p1').innerHTML =""
+  var n;
+  var taras=0;
+  n = document.getElementById('i1').value;
+n = n * n;
+taras= Math.pow(2,n);
+  document.getElementById('p1').innerHTML = taras - 1;
+ }
+
+
+</script>
+
+<br>
+<br>
+
+
+<br>
 <input value="" id="i1" type="text">
 <br>
+<br>
+<a href="#on" class="button15" onclick="e3()" >Array</a>
+<br>
+
+<p0 id="p2">Муки ИРЫ</p0>
+<script>
+ function e4 (){
+       document.getElementById('p2').innerHTML =""
+       var n;
+         var a = "y";
+    b = "x";
+    n = document.getElementById('i2').value;
+  for (var i = 3; i <= n; i++) {
+    var c = a + b;
+    a = b;
+    b = c;
+  }
+  document.getElementById('p2').innerHTML = b
+ }
+
+
+</script>
+
+<br>
+<br>
+
+
+<br>
 <input value="" id="i2" type="text">
+<br>
+<br>
+<a href="#on" class="button15" onclick="e4()" >Array</a>
+<br>
+<p0 id="p3">Муки ИРЫ</p0>
+<script>
+ function e5 (){
+       document.getElementById('p3').innerHTML =""
+       var R;
+       var a;
+    R = document.getElementById('i3').value;
+    a = document.getElementById('i4').value;
+    var S = (3.14 * R * R * a) / 360 * (3.14/ 180);
+    var m = Math.pow(10,4);
+    var b = Math.round(S*m)/m;
+  document.getElementById('p3').innerHTML = b;
+ }
+
+
+</script>
+
+<br>
+<br>
+
+
 <br>
 <input value="" id="i3" type="text">
 <br>
 <input value="" id="i4" type="text">
 <br>
-<input value="" id="i5" type="text">
-<br> 
-<input value="" id="i6" type="text">
 <br>
-<input value="" id="i7" type="text">
-<br>
-<input value="" id="i8" type="text">
-<br>
-<input value="" id="i9" type="text">
+<a href="#on" class="button15" onclick="e5()" >Array</a>
 
 </body>
 </html>
